@@ -119,15 +119,20 @@ li:hover{
     background-color: #c7f4ff;
 }
 
-.icon, #icon-dropdown{
+.icon{
     padding: 0px 20px 0px 50px;
     width: 95px;
     height: 25px;
 }
 
+.fa-chevron-down{
+    color: #69797d;
+    padding-left: 65px;
+
+}
+
 #panel{
     display: none;
-    padding-left: 100px;
 }
 
 /* footer */
