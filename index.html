@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>EQHOMES</title>
 </head>
@@ -21,13 +22,22 @@
             <div>
                 <ul>
                     <li><img class="icon" src="../eqhome/images/home-icon.png" alt=""><a href="">TRANG CHỦ</a></li>
-                    <li><img class="icon" src="../eqhome/images/user-icon.png" alt=""> <a href="">TRANG CHỦ ADMIN</a></li>
-                    <li><img class="icon" src="../eqhome/images/quanLyChuyenMuc.png" alt=""><a href="">QL CHUYÊN MỤC</a></li>
-                    <li><img class="icon" src="../eqhome/images/quanLyBDS.png" alt=""><a href="">QL BẤT ĐỘNG SẢN</a></li>
-                    <li><img class="icon" src="../eqhome/images/quanLyNguoiDung.png" alt=""><a href="">QL NGƯỜI DÙNG</a></li>
-                    <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt=""><a href="">QL DANH SÁCH</a>
-                    <img style="padding-left: 70px" src="../eqhome/images/right-icon.png" alt="">
+                    <li><img class="icon" src="../eqhome/images/user-icon.png" alt=""> <a href="">TRANG CHỦ ADMIN</a>
                     </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyChuyenMuc.png" alt=""><a href="">QL CHUYÊN MỤC</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyBDS.png" alt=""><a href="">QL BẤT ĐỘNG SẢN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyNguoiDung.png" alt=""><a href="">QL NGƯỜI DÙNG</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
+                        <a href="#" id="flip">QL DANH SÁCH</a>
+                    </li>
+                    <ul id="panel" >
+                        <li><a href="">DANH SÁCH 1</a></li>
+                        <li><a href="">DANH SÁCH 2</a></li>
+                        <li><a href="">DANH SÁCH 3</a></li>
+                    </ul>
                     <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a href="">GIỚI THIỆU</a></li>
                     <li><img class="icon" src="../eqhome/images/tinTuc.png" alt=""><a href="">TIN TỨC</a></li>
                     <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a href="">ĐĂNG TIN</a></li>
@@ -133,9 +143,18 @@
         </div>
     </div>
     <div class="footer">
-        <p><span><i class="far fa-copyright"></i></span> Copyright ITI Group. All right reserved.</p>
+        <p><span><i class="far fa-copyright"></i></span> Copyright HVCG Software. All right reserved.</p>
     </div>
 
 </body>
+<script src="../eqhome/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+</script>
 
 </html>
