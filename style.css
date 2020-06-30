@@ -8,14 +8,14 @@
 
 /* header */
 .header{
-    height: 80px;
+    height: 65px;
     background-color: #1caace;
     display: flex;
     align-items: center;
 }
 
 .header-title{
-    padding-left: 40px;
+    padding-left: 20px;
     color: white;
     font-style: normal;
     font-weight: 600;
@@ -25,23 +25,23 @@
 
 /* body */
 .user-row{
-    padding: 40px;
+    padding: 20px;
     display: flex;
     align-items: center;
 }
 
 #user-avatar{
-    width: 150px;
+    width: 120px;
 }
 
 .user-name{
-    padding-left: 40px;
+    padding-left: 30px;
     font-size: 18px;
     font-weight: 600;
 }
 
 .input-field{
-    padding: 0px 40px ;
+    padding: 0px 40px 0px 20px ;
 }
 
 .left-col{
@@ -56,12 +56,29 @@
 .item{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 5px 0px;
     font-size: 18px;
 }
 
-.w-250px{
-    width: 250px;
+.button {
+    background-color: #0185c1;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 18px 0px 18px 5px;
+}
+
+.btn-row{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.w-300px{
+    width: 300px;
 }
 
 .w-20{
@@ -92,12 +109,12 @@ a, a:hover{
 
 li{
     border: 1px solid #d7d7d7;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
 }
 
-li:hover{
+li:hover cursor:pointer{
     background-color: #c7f4ff;
 }
 
@@ -106,3 +123,20 @@ li:hover{
     width: 95px;
     height: 25px;
 }
+
+/* footer */
+.footer{
+    height: 65px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-title{
+    color: #777777;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+/* end footer */
