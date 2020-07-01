@@ -1,0 +1,153 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myriad-pro, sans-serif;
+}
+
+/* header */
+.header{
+    height: 65px;
+    background-color: #1caace;
+    display: flex;
+    align-items: center;
+}
+
+.header-title{
+    padding-left: 20px;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+/* end header */
+
+/* side bar */
+.side-bar{
+    border: 1px solid #d7d7d7;
+}
+
+#logo{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a, a:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: #69797d;
+}
+
+li{
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+li:hover{
+    background-color: #c7f4ff;
+}
+
+.icon{
+    padding: 0px 20px 0px 50px;
+    width: 95px;
+    height: 25px;
+}
+
+.fa-chevron-down{
+    color: #69797d;
+    padding-left: 65px;
+
+}
+
+#panel{
+    display: none;
+}
+
+/* table */
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    height: 80px;
+    width: 15%;
+    padding-left: 20px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+td{
+    height: 100px;
+    padding-left: 20px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.action-col{
+    width: 5%;
+}
+
+/* body */
+.input-field{
+    padding: 0px 40px 0px 20px ;
+}
+
+.tab-bar{
+    height: 60px;
+    margin: 0;
+    align-items: center;
+}
+
+.tab-bar-li:hover{
+    background-color: white;
+    color: #0d3d6e;
+}
+
+.tab-bar-li{
+    border: none;
+    padding: 0px 10px;
+    margin-left: 10px;
+}
+
+.tab-bar-link:hover{
+    color: #0d3d6e;
+} 
+
+.tab-bar-link:focus{
+    color: #0d3d6e;
+    border-bottom: 1px solid #0d3d6e;
+}
+.w-300px{
+    width: 300px;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+/* footer */
+.footer{
+    height: 65px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* left: 0;
+    bottom: 0; */
+}
+
+.footer-title{
+    color: #777777;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+/* end footer */

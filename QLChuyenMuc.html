@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="../eqhome/css/QLChuyenMuc.css">
+    <title>EQHOMES</title>
+</head>
+
+<body>
+    <div class="main d-flex">
+        <div class="side-bar w-20 p-0">
+            <div id="logo" class="d-flex justify-content-center">
+                <img src="../eqhome/images/logo.png" alt="logo">
+            </div>
+            <div>
+                <ul>
+                    <li><img class="icon" src="../eqhome/images/home-icon.png" alt=""><a href="">TRANG CHỦ</a></li>
+                    <li><img class="icon" src="../eqhome/images/user-icon.png" alt=""> <a href="../eqhome/index.html">TRANG CHỦ ADMIN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyChuyenMuc.png" alt=""><a href="../eqhome/QLChuyenMuc.html">QL CHUYÊN MỤC</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyBDS.png" alt=""><a href="">QL BẤT ĐỘNG SẢN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyNguoiDung.png" alt=""><a href="">QL NGƯỜI DÙNG</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
+                        <a href="#" id="flip">QL DANH SÁCH</a>
+                        <i class="fas fa-chevron-down"></i>
+                    </li>
+                    <ul id="panel">
+                        <li><a style="padding-left: 96px;" href="">DANH SÁCH 1</a></li>
+                        <li><a style="padding-left: 96px;" href="">DANH SÁCH 2</a></li>
+                        <li><a style="padding-left: 96px;" href="">DANH SÁCH 3</a></li>
+                    </ul>
+                    <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a href="">GIỚI THIỆU</a></li>
+                    <li><img class="icon" src="../eqhome/images/tinTuc.png" alt=""><a href="">TIN TỨC</a></li>
+                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a href="">ĐĂNG TIN</a></li>
+                    <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
+                    <li><img class="icon" src="../eqhome/images/dangXuat.png" alt=""><a href="">ĐĂNG XUẤT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-80 p-0">
+            <div class="header">
+                <span class="header-title align-baseline">Quản lý chuyên mục</span>
+            </div>
+
+            <div>
+                <ul class="tab-bar d-flex">
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyChuyenMuc('cmA')">Quản lý chuyên mục</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyChuyenMuc('cmB')">Tạo mới chuyên mục</a></li>
+                </ul>
+            </div>
+
+            <div id="cmA" class="qLCM">
+                <table>
+                    <tr>
+                        <th>Tên chuyên mục</th>
+                        <th>Loại tin</th>
+                        <th>Số thứ tự</th>
+                        <th>Hiển thị</th>
+                        <th class="action-col">Sửa</th>
+                        <th class="action-col">Xoá</th>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="cmB" class="qLCM"  style="display: none;">
+                <table>
+                    <tr>
+                        <th>Tên chuyên mục</th>
+                        <th>Loại tin</th>
+                        <th>Số thứ tự</th>
+                        <th>Hiển thị</th>
+                        <th class="action-col">Sửa</th>
+                        <th class="action-col">Xoá</th>
+                    </tr>
+                    <tr>
+                        <td>Nhà đất bán</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Giới thiệu</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>Hiện</td>
+                        <td><i class="far fa-edit"></i></td>
+                        <td><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="footer">
+                <p><span><i class="far fa-copyright"></i></span> Copyright HVCG Software. All right reserved.</p>
+            </div>
+
+</body>
+<script src="../eqhome/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+</script>
+
+</html>
