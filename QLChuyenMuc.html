@@ -8,13 +8,13 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <link rel="stylesheet" href="../eqhome/css/QLChuyenMuc.css">
+    <link rel="stylesheet" href="../eqhome/style.css">
     <title>EQHOMES</title>
 </head>
 
 <body>
-    <div class="main d-flex">
-        <div class="side-bar w-20 p-0">
+    <div class="main">
+        <div class="side-bar w-21 p-0">
             <div id="logo" class="d-flex justify-content-center">
                 <img src="../eqhome/images/logo.png" alt="logo">
             </div>
@@ -32,8 +32,7 @@
                     <li><img class="icon" src="../eqhome/images/quanLyNguoiDung.png" alt=""><a href="">QL NGƯỜI DÙNG</a>
                     </li>
                     <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
-                        <a href="#" id="flip">QL DANH SÁCH</a>
-                        <i class="fas fa-chevron-down"></i>
+                        <a href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel">
                         <li><a style="padding-left: 96px;" href="">DANH SÁCH 1</a></li>
@@ -49,14 +48,14 @@
             </div>
         </div>
 
-        <div class="w-80 p-0">
+        <div class="w-79 p-0">
             <div class="header">
                 <span class="header-title align-baseline">Quản lý chuyên mục</span>
             </div>
 
             <div>
                 <ul class="tab-bar d-flex">
-                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyChuyenMuc('cmA')">Quản lý
+                    <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#" onclick="quanLyChuyenMuc('cmA')">Quản lý
                             chuyên mục</a></li>
                     <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyChuyenMuc('cmB')">Tạo mới
                             chuyên mục</a></li>
@@ -116,48 +115,49 @@
                 </table>
             </div>
 
-            <div id="cmB" class="qLCM" style="display: none;">
-                <table>
-                    <tr>
-                        <th>Tên chuyên mục</th>
-                        <th>Loại tin</th>
-                        <th>Số thứ tự</th>
-                        <th>Hiển thị</th>
-                        <th class="action-col">Sửa</th>
-                        <th class="action-col">Xoá</th>
-                    </tr>
-                    <tr>
-                        <td>Nhà đất bán</td>
-                        <td></td>
-                        <td>1</td>
-                        <td>Hiện</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Giới thiệu</td>
-                        <td></td>
-                        <td>1</td>
-                        <td>Hiện</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Giới thiệu</td>
-                        <td></td>
-                        <td>1</td>
-                        <td>Hiện</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                </table>
+            <div id="cmB" class="qLCM" style="display: none; margin-left: auto; margin-right: auto;">
+                <div class="w-50 pt-3 pr-5 pl-5 ">
+                    <div class="item">
+                        <div><label for="">Tên chuyên mục</label></div>
+                        <div><input class="w-300px" type="text" id="" name=""></div>
+                    </div>
+                    <div class="item">
+                        <div><label for="">Chuyên mục cha</label></div>
+                        <div><select class="w-300px" style="height: 30px;" name="" id=""></select></div>
+                    </div>
+                    <div class="item">
+                        <div><label for="">Số thứ tự</label></div>
+                        <div><input class="w-300px" type="text" id="" name=""></div>
+                    </div>
+                    <div class="item">
+                        <div><label for="">Loại chuyên mục</label></div>
+                        <div><select class="w-300px" style="height: 30px;" name="" id=""></select></div>
+                    </div>
+                </div>
+                <div class="w-50 pt-3 pl-5 pr-5">
+                    <div class="item">
+                        <div><label for="">Mô tả</label></div>
+                        <div><textarea class="w-300px" style="height: 120px;" name="" id=""></textarea></div>
+                    </div>
+                    <div class="item">
+                        <div><label for="">Hiển thị</label></div>
+                        <div class="d-flex justify-content-around w-300px">
+                            <div><input type="radio" name="check" id=""> Có</div>
+                            <div><input type="radio" name="check" id=""> Không</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-3" style="width:100%">
+                    <button class="button">Tạo mới</button>
+                    <button class="button">Huỷ</button>
+                </div>
             </div>
-            <div class="footer">
-                <p><span><i class="far fa-copyright"></i></span> Copyright HVCG Software. All right reserved.</p>
-            </div>
+
         </div>
-
-
+        <div class="footer">
+            <p class="footer-title"><span><i class="far fa-copyright"></i></span> Copyright HVCG Software. All right reserved.</p>
+        </div>
+    </div>
 </body>
 <script src="../eqhome/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
