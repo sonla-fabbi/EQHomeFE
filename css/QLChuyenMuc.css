@@ -74,14 +74,14 @@ table{
 }
 
 th{
-    height: 80px;
+    height: 60px;
     width: 15%;
     padding-left: 20px;
     border-bottom: 1px solid #d7d7d7;
 }
 
 td{
-    height: 100px;
+    height: 80px;
     padding-left: 20px;
     border-bottom: 1px solid #d7d7d7;
 }
@@ -135,11 +135,13 @@ td{
 /* footer */
 .footer{
     height: 65px;
+    width: 100%;
     background-color: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 100%;
     /* left: 0;
     bottom: 0; */
 }
