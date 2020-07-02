@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+        <link rel="stylesheet" href="../eqhome/css/style.css">
+        <link rel="stylesheet" href="../eqhome/css/ckeditor.css">
+    <title>EQHOMES</title>
+    <style>
+        .ck-editor__editable_inline {
+            width: 100%;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="side-bar w-21 p-0">
+            <div id="logo" class="d-flex justify-content-center">
+                <img src="../eqhome/images/logo.png" alt="logo">
+            </div>
+            <div>
+                <ul>
+                    <li><img class="icon" src="../eqhome/images/home-icon.png" alt=""><a href="">TRANG CHỦ</a></li>
+                    <li><img class="icon" src="../eqhome/images/user-icon.png" alt=""> <a
+                            href="../eqhome/index.html">TRANG CHỦ ADMIN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyChuyenMuc.png" alt=""><a
+                            href="../eqhome/QLChuyenMuc.html">QL CHUYÊN MỤC</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyBDS.png" alt=""><a
+                            href="../eqhome/QLBatDongSan.html">QL BẤT ĐỘNG SẢN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyNguoiDung.png" alt=""><a
+                            href="../eqhome/QLNguoiDung.html">QL NGƯỜI DÙNG</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
+                        <a href="../eqhome/QLHuongNha.html" id="flip">QL DANH SÁCH<i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <ul id="panel">
+                        <li><a style="padding-left: 96px;" href="">DANH SÁCH 1</a></li>
+                        <li><a style="padding-left: 96px;" href="">DANH SÁCH 2</a></li>
+                        <li><a style="padding-left: 96px;" href="">DANH SÁCH 3</a></li>
+                    </ul>
+                    <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a href="">GIỚI THIỆU</a></li>
+                    <li><img class="icon" src="../eqhome/images/tinTuc.png" alt=""><a href="">TIN TỨC</a></li>
+                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a href="">ĐĂNG TIN</a></li>
+                    <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
+                    <li><img class="icon" src="../eqhome/images/dangXuat.png" alt=""><a href="">ĐĂNG XUẤT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-79 p-0">
+            <div class="header d-flex justify-content-between">
+                <span class="header-title align-baseline">Quản lý danh sách / Quản lý hướng nhà</span>
+            </div>
+
+            <div>
+                <ul class="tab-bar d-flex">
+                    <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#"
+                            onclick="quanLyHuongNha('qLPT')">Quản lý phong thuỷ</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyHuongNha('tPT')">Tạo phong
+                            thuỷ mới</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="qLPT" class="huongNha">
+                <table>
+                    <tr>
+                        <th style="text-align: center; width:5%">STT</th>
+                        <th style="text-align: center; width:25%">Năm sinh</th>
+                        <th style="text-align: center; width:25%">Giới tính</th>
+                        <th style="text-align: center; width:25%">Hướng nhà</th>
+                        <th style="text-align: center; width:10%">Xoá</th>
+                        <th style="text-align: center; width:10%">Chỉnh sửa</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">1</td>
+                        <td style="text-align: center">1995</td>
+                        <td style="text-align: center">Nam</td>
+                        <td style="text-align: center">Bắc</td>
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                        <td style="text-align: center"><i class="far fa-edit"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">2</td>
+                        <td style="text-align: center">1999</td>
+                        <td style="text-align: center">Nữ</td>
+                        <td style="text-align: center">Đông</td>
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                        <td style="text-align: center"><i class="far fa-edit"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">3</td>
+                        <td style="text-align: center">1991</td>
+                        <td style="text-align: center">Nữ</td>
+                        <td style="text-align: center">Đông Bắc</td>
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                        <td style="text-align: center"><i class="far fa-edit"></i></td>
+                    </tr>
+                    <tr class="table-footer">
+                        <td style="text-align: center;" colspan="8">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <i class="fas fa-angle-double-right"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tPT" class="huongNha"
+                style="display: none; flex-wrap: wrap; flex-direction: column; margin-left: auto; margin-right: auto;">
+                <div class="pr-5 pl-5">
+                    <div class="item w-50" style="padding: 5px 0px;">
+                        <div><label for="">Năm sinh</label></div>
+                        <div><input class="w-300px" type="text" id="" name=""></div>
+                    </div>
+                    <div class="item w-50" style="padding: 5px 0px;">
+                        <div><label for="">Giới tính</label></div>
+                        <div class="d-flex justify-content-around w-300px">
+                            <div><input type="radio" name="gender" checked id=""> Nam</div>
+                            <div><input type="radio" name="gender" id=""> Nữ</div>
+                        </div>
+                    </div>
+                    <div class="item w-50" style="padding: 5px 0px;">
+                        <div><label for="">Hướng nhà</label></div>
+                        <div><select class="w-300px" style="height: 30px;" name="" id=""></select></div>
+                    </div>
+                    <div class="item d-flex flex-wrap" style="padding: 5px 0px;">
+                        <div style="width:100%"><label for="">Nội dung</label></div>
+                        <div id="editor"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="button">Tạo mới</button>
+                        <button class="button">Xoá hết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-title"><span><i class="far fa-copyright"></i></span> Copyright HVCG Software. All right
+                reserved.</p>
+        </div>
+    </div>
+</body>
+<script src="../eqhome/script.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+
+</html>

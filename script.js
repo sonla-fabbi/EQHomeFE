@@ -27,3 +27,12 @@ function quanLyChuyenMuc(chuyenMuc) {
     document.getElementById(nD).style.display = "flex";
   }
 
+  function quanLyHuongNha(hN) {
+    var i;
+    var x = document.getElementsByClassName("huongNha");
+    for (i = 0; i < x.length; i++){
+      x[i].style.display = "none";  
+    }
+    document.getElementById(hN).style.display = "flex";
+  }
+
