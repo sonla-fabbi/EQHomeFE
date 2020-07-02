@@ -7,7 +7,6 @@ function quanLyChuyenMuc(chuyenMuc) {
     }
     document.getElementById(chuyenMuc).style.display = "flex";
     document.getElementById(chuyenMuc).style.flexWrap = "wrap";
-    // document.getElementById(chuyenMuc).style.borderBottomColor ="#007bff"
   }
 
   function quanLyBDS(BDS) {
@@ -17,6 +16,14 @@ function quanLyChuyenMuc(chuyenMuc) {
       x[i].style.display = "none";  
     }
     document.getElementById(BDS).style.display = "flex";
-    // document.getElementById(chuyenMuc).style.borderBottomColor ="#007bff"
+  }
+
+  function quanLyNguoiDung(nD) {
+    var i;
+    var x = document.getElementsByClassName("nguoiDung");
+    for (i = 0; i < x.length; i++){
+      x[i].style.display = "none";  
+    }
+    document.getElementById(nD).style.display = "flex";
   }
 
