@@ -36,3 +36,21 @@ function quanLyChuyenMuc(chuyenMuc) {
     document.getElementById(hN).style.display = "flex";
   }
 
+  function quanLyLaiSuat(lS) {
+    var i;
+    var x = document.getElementsByClassName("laiSuat");
+    for (i = 0; i < x.length; i++){
+      x[i].style.display = "none";  
+    }
+    document.getElementById(lS).style.display = "flex";
+  }
+
+  function showDetail(detail) {
+    var i;
+    var x = document.getElementsByClassName("sDetail");
+    for (i = 0; i < x.length; i++){
+      x[i].style.display = "none";  
+    }
+    document.getElementById(detail).style.display = "flex";
+  }
+
