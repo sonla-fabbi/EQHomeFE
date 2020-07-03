@@ -59,52 +59,59 @@
 
         <div class="w-79 p-0">
             <div class="header d-flex justify-content-between">
-                <span class="header-title align-baseline">Quản lý hướng nhà</span>
+                <span class="header-title align-baseline">Giới thiệu</span>
             </div>
 
             <div>
                 <ul class="tab-bar d-flex">
                     <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#"
-                            onclick="quanLyHuongNha('qLPT')">Quản lý phong thuỷ</a></li>
-                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyHuongNha('tPT')">Tạo phong
-                            thuỷ mới</a>
+                            onclick="quanLyLaiSuat('lS')">Giới thiệu</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyLaiSuat('tLS')">Tạo mới bản tin</a>
                     </li>
                 </ul>
             </div>
 
-            <div id="qLPT" class="tab-content">
-                <table>
+            <div id="lS" class="tab-content">
+                <table class="old-style-table">
                     <tr>
-                        <th style="text-align: center; width:5%">STT</th>
-                        <th style="text-align: center; width:25%">Năm sinh</th>
-                        <th style="text-align: center; width:25%">Giới tính</th>
-                        <th style="text-align: center; width:25%">Hướng nhà</th>
-                        <th style="text-align: center; width:10%">Xoá</th>
-                        <th style="text-align: center; width:10%">Chỉnh sửa</th>
+                        <th style="text-align: center; width:1%">STT</th>
+                        <th style="text-align: center; width:38%">Tiêu đề</th>
+                        <th style="text-align: center; width:10%">Người viết</th>
+                        <th style="text-align: center; width:10%">Ngày viết</th>
+                        <th style="text-align: center; width:10%">Ngày đăng</th>
+                        <th style="text-align: center; width:9%">Trạng thái</th>
+                        <th style="text-align: center; width:1%">Sửa</th>
+                        <th style="text-align: center; width:1%">Xoá</th>
                     </tr>
                     <tr>
                         <td style="text-align: center">1</td>
-                        <td style="text-align: center">1995</td>
-                        <td style="text-align: center">Nam</td>
-                        <td style="text-align: center">Bắc</td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                        <td style="text-align: left"><a href="">Hướng dẫn sắp xếp phong thuỷ phòng ngủ</a></td>
+                        <td style="text-align: center">NguyenTrung</td>
+                        <td style="text-align: center">20/02/2020</td>
+                        <td style="text-align: center">20/02/2020</td>
+                        <td style="text-align: center">Published</td>
                         <td style="text-align: center"><i class="far fa-edit"></i></td>
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>       
                     </tr>
                     <tr>
                         <td style="text-align: center">2</td>
-                        <td style="text-align: center">1999</td>
-                        <td style="text-align: center">Nữ</td>
-                        <td style="text-align: center">Đông</td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                        <td style="text-align: left"><a href="">Hướng dẫn phong thuỷ cho người mới</a></td>
+                        <td style="text-align: center">Admin</td>
+                        <td style="text-align: center">20/02/2020</td>
+                        <td style="text-align: center">20/02/2020</td>
+                        <td style="text-align: center">Published</td>
                         <td style="text-align: center"><i class="far fa-edit"></i></td>
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>       
                     </tr>
                     <tr>
                         <td style="text-align: center">3</td>
-                        <td style="text-align: center">1991</td>
-                        <td style="text-align: center">Nữ</td>
-                        <td style="text-align: center">Đông Bắc</td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                        <td style="text-align: left;"><a href="">Mua nhà xem tuổi vợ hay chồng để hợp phong thuỷ?</a></td>
+                        <td style="text-align: center">PhucXO</td>
+                        <td style="text-align: center">20/02/2020</td>
+                        <td style="text-align: center">20/02/2020</td>
+                        <td style="text-align: center">Published</td>
                         <td style="text-align: center"><i class="far fa-edit"></i></td>
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>       
                     </tr>
                     <tr class="table-footer">
                         <td style="text-align: center;" colspan="8">
@@ -117,31 +124,34 @@
                 </table>
             </div>
 
-            <div id="tPT" class="tab-content"
+            <div id="tLS" class="tab-content"
                 style="display: none; flex-wrap: wrap; flex-direction: column; margin-left: auto; margin-right: auto;">
                 <div class="pr-5 pl-5">
-                    <div class="item w-50" style="padding: 5px 0px;">
-                        <div><label for="">Năm sinh</label></div>
-                        <div><input class="w-300px" type="text" id="" name=""></div>
-                    </div>
-                    <div class="item w-50" style="padding: 5px 0px;">
-                        <div><label for="">Giới tính</label></div>
-                        <div class="d-flex justify-content-around w-300px">
-                            <div><input type="radio" name="gender" checked id=""> Nam</div>
-                            <div><input type="radio" name="gender" id=""> Nữ</div>
-                        </div>
-                    </div>
-                    <div class="item w-50" style="padding: 5px 0px;">
-                        <div><label for="">Hướng nhà</label></div>
+                    <div class="item justify-content-start" style="padding: 5px 0px;">
+                        <div><label for="">Ngân hàng</label></div>
                         <div><select class="w-300px" style="height: 30px;" name="" id=""></select></div>
                     </div>
-                    <div class="item d-flex flex-wrap" style="padding: 5px 0px;">
-                        <div style="width:100%"><label for="">Nội dung</label></div>
-                        <div id="editor"></div>
+                    <div class="item justify-content-start" style="padding: 5px 0px;">
+                        <div><label for="">Kỳ hạn vay</label></div>
+                        <div><input class="w-300px" type="text" id="" name=""></div>
+                        <span class="pl-3"><i>Tháng</i></span>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <button class="button">Tạo mới</button>
-                        <button class="button">Xoá hết</button>
+                    <div class="item justify-content-start" style="padding: 5px 0px;">
+                        <div><label for="">Lãi suất</label></div>
+                        <div><input class="w-300px" type="text" id="" name=""></div>
+                        <span class="pl-3"><i>Dấu thập phân là dấu .</i></span>
+                    </div>
+                    
+                    <div class="item justify-content-start" style="padding: 5px 0px;">
+                        <div><label for="">Mệnh giá</label></div>
+                        <div class="d-flex justify-content-around w-300px">
+                            <div><input type="radio" name="currency" checked id=""> VND</div>
+                            <div><input type="radio" name="currency" id=""> USD</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <button class="button ml-0">Tạo mới</button>
+                        <button class="button">Huỷ</button>
                     </div>
                 </div>
             </div>

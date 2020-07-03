@@ -1,7 +1,7 @@
 // tab bar
 function quanLyChuyenMuc(chuyenMuc) {
     var i;
-    var x = document.getElementsByClassName("qLCM");
+    var x = document.getElementsByClassName("tab-content");
     for (i = 0; i < x.length; i++){
       x[i].style.display = "none";  
     }
@@ -11,7 +11,7 @@ function quanLyChuyenMuc(chuyenMuc) {
 
   function quanLyBDS(BDS) {
     var i;
-    var x = document.getElementsByClassName("batDongSan");
+    var x = document.getElementsByClassName("tab-content");
     for (i = 0; i < x.length; i++){
       x[i].style.display = "none";  
     }
@@ -20,7 +20,7 @@ function quanLyChuyenMuc(chuyenMuc) {
 
   function quanLyNguoiDung(nD) {
     var i;
-    var x = document.getElementsByClassName("nguoiDung");
+    var x = document.getElementsByClassName("tab-content");
     for (i = 0; i < x.length; i++){
       x[i].style.display = "none";  
     }
@@ -29,7 +29,7 @@ function quanLyChuyenMuc(chuyenMuc) {
 
   function quanLyHuongNha(hN) {
     var i;
-    var x = document.getElementsByClassName("huongNha");
+    var x = document.getElementsByClassName("tab-content");
     for (i = 0; i < x.length; i++){
       x[i].style.display = "none";  
     }
@@ -38,7 +38,7 @@ function quanLyChuyenMuc(chuyenMuc) {
 
   function quanLyLaiSuat(lS) {
     var i;
-    var x = document.getElementsByClassName("laiSuat");
+    var x = document.getElementsByClassName("tab-content");
     for (i = 0; i < x.length; i++){
       x[i].style.display = "none";  
     }
