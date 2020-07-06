@@ -54,6 +54,15 @@ function quanLyChuyenMuc(chuyenMuc) {
     document.getElementById(gT).style.display = "flex";
   }
 
+  function tinBDS(tBDS) {
+    var i;
+    var x = document.getElementsByClassName("tab-content");
+    for (i = 0; i < x.length; i++){
+      x[i].style.display = "none";  
+    }
+    document.getElementById(tBDS).style.display = "flex";
+  }
+
   function showDetail(detail) {
     var i;
     var x = document.getElementsByClassName("sDetail");

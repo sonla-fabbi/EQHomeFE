@@ -4,14 +4,20 @@
     margin: 0;
     box-sizing: border-box;
     font-family: myriad-pro, sans-serif;
+    
+
+
 }
 
 /* header */
 .header{
+    width: calc(100% - 21%);
     height: 65px;
     background-color: #1caace;
     display: flex;
     align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .header-title{
@@ -131,6 +137,22 @@ label{
     width: 161px;
 }
 
+.w-90px{
+    width: 90px;
+}
+
+.w-200px{
+    width: 200px;
+}
+
+.w-225px{
+    width: 225px;
+}
+
+.w-250px{
+    width: 250px;
+}
+
 .w-300px{
     width: 300px;
 }
@@ -208,14 +230,14 @@ li:hover{
 
 /* footer */
 .footer{
-    height: 65px;
+    height: 65px    ;
     width: 100%;
     background-color: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 100%;
+    position: absolute;
+    bottom: 0;
     /* left: 0;
     bottom: 0; */
 }

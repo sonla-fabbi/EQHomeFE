@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="../eqhome/css/style.css">
+    <link rel="stylesheet" href="../eqhome/css/ckeditor.css">
+    <title>EQHOMES</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="side-bar w-21 p-0">
+            <div id="logo" class="d-flex justify-content-center">
+                <img src="../eqhome/images/logo.png" alt="logo">
+            </div>
+            <div>
+                <ul>
+                    <li><img class="icon" src="../eqhome/images/home-icon.png" alt=""><a href="">TRANG CHỦ</a></li>
+                    <li><img class="icon" src="../eqhome/images/user-icon.png" alt=""> <a
+                            href="../eqhome/index.html">TRANG CHỦ ADMIN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyChuyenMuc.png" alt=""><a
+                            href="../eqhome/QLChuyenMuc.html">QL CHUYÊN MỤC</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyBDS.png" alt=""><a
+                            href="../eqhome/QLBatDongSan.html">QL BẤT ĐỘNG SẢN</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyNguoiDung.png" alt=""><a
+                            href="../eqhome/QLNguoiDung.html">QL NGƯỜI DÙNG</a>
+                    </li>
+                    <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
+                        <a href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <ul id="panel">
+                        <li><a href="../eqhome/QLHuongNha.html">Quản lý hướng nhà</a></li>
+                        <li><a href="../eqhome/QLLaiSuat.html">Quản lý lãi suất</a></li>
+                        <li><a href="../eqhome/QLKyGui.html">Quản lý ký gửi</a></li>
+                    </ul>
+                    <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a
+                            href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
+                    <li><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
+                        <a href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <ul id="panel2">
+                        <li><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
+                        <li><a href="#">Phong thuỷ</a></li>
+                        <li><a href="#">Luật bất động sản</a></li>
+                        <li><a href="#">Kiến trúc</a></li>
+                        <li><a href="#">Tài chính</a></li>
+                    </ul>
+                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a
+                            href="../eqhome/DangTin.html">ĐĂNG TIN</a></li>
+                    <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
+                    <li><img class="icon" src="../eqhome/images/dangXuat.png" alt=""><a href="">ĐĂNG XUẤT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header d-flex justify-content-between">
+            <span class="header-title align-baseline">Đăng tin</span>
+        </div>
+        <div class="w-79 p-0"  style="position: relative; ;overflow-y: auto;">
+            
+            <div>
+                <div>
+                    <div class=" pl-5 pr-5">
+                        <p>THÔNG TIN CƠ BẢN</p>
+                    </div>
+                    <div class="pr-5 pl-5">
+                        <div class="item d-flex justify-content-start">
+                            <div><label for="">Ngày kết thúc</label></div>
+                            <div><input class="w-300px" type="date"></div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="item justify-content-between" style="padding: 5px 0px;">
+                                <div><label for="">Hình hiển thị</label></div>
+                                <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                        <option value="" selected hidden> Lựa chọn thành phố</option>
+                                    </select></div>
+                            </div>
+                            <div class="item justify-content-between" style="padding: 5px 0px;">
+                                <div><label for="">Quận huyện</label></div>
+                                <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                        <option value="" selected hidden> Lựa chọn quận huyện</option>
+                                    </select></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="item justify-content-between" style="padding: 5px 0px;">
+                                <div><label for="">Hình thức</label></div>
+                                <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                        <option value="" selected hidden> Lựa chọn hình thức</option>
+                                    </select></div>
+                            </div>
+                            <div class="item justify-content-between" style="padding: 5px 0px;">
+                                <div><label for="">Loại</label></div>
+                                <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                        <option value="" selected hidden> Lựa chọn loại BDS</option>
+                                    </select></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="item justify-content-between" style="padding: 5px 0px;">
+                                <div><label for="">Diện tích</label></div>
+                                <div class="w-300px d-flex justify-content-between">
+                                    <div><input class="w-200px" type="text" id="" name=""></div>
+                                    <div><select class="w-90px" style="height: 30px;" name="" id="">
+                                            <option value="" selected> m2</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                            <div class="item justify-content-between" style="padding: 5px 0px;">
+                                <div><label for="">Giá</label></div>
+                                <div class="w-300px d-flex justify-content-between">
+                                    <div><input class="w-200px" type="text" id="" name=""></div>
+                                    <div><select class="w-90px" style="height: 30px;" name="" id="">
+                                            <option value="" selected> Triệu</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item d-flex justify-content-start" style="padding: 5px 0px;">
+                            <div><label for="">Hướng nhà</label></div>
+                            <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                    <option value="" selected hidden> Lựa chọn hướng nhà</option>
+                                </select></div>
+                        </div>
+                        <div class="item w-100">
+                            <div><label for="">Địa chỉ</label></div>
+                            <div class="w-100"><input class="w-100" type="text"></div>
+                        </div>
+                        <div class="item w-100">
+                            <div><label for="">Sổ đỏ</label></div>
+                            <div class="w-100"><input class="w-100" type="text"></div>
+                        </div>
+                        <div class="item w-100">
+                            <div><label for="">Link video</label></div>
+                            <div class="w-100"><input class="w-100" type="text"
+                                    placeholder=" ví dụ: https://www.youtube.com/embed/Lp0V1sDNNXk"></div>
+                        </div>
+                        <div class="item w-100">
+                            <div><label for="">Toạ độ chính xác</label></div>
+                            <div class="w-100"><input class="w-100" type="text"
+                                    placeholder=" ví dụ (kinh độ, vĩ độ): 21.0300188,105.8231854"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class=" pl-5 pr-5">
+                        <p>THÔNG TIN LIÊN HỆ</p>
+                    </div>
+                    <div class="d-flex pr-5 pl-5 justify-content-between">
+                        <div class="item d-flex justify-content-between">
+                            <div><label class="w-90px" for="">Họ tên</label></div>
+                            <div><input class="w-200px" type="text"></div>
+                        </div>
+                        <div class="item d-flex justify-content-around">
+                            <div><label class="w-90px" for="">Điện thoại</label></div>
+                            <div><input class="w-200px" type="text"></div>
+                        </div>
+                        <div class="item d-flex justify-content-between">
+                            <div><label class="w-90px" for="">Email</label></div>
+                            <div><input class="w-200px" type="text"></div>
+                        </div>
+                    </div>
+                    <div class="w-100 pl-5 pr-5">
+                        <textarea class="w-100"></textarea>
+                    </div>
+                </div>
+                <div class="d-flex pr-5 pl-5 justify-content-start">
+                    <div><label for="">Tags</label></div>
+                    <div class="d-flex flex-column">
+                        <div class="w-100 d-flex flex-wrap">
+                            <div class="d-flex flex-wrap  justify-content-between">
+                                <div><input class="mr-2" type="checkbox">Tạo luồng sự kiện mới</div>
+                                <div><input class="w-300px ml-2" type="text"></div>
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex flex-wrap">
+                            <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+                                <div><input class="mr-2" type="checkbox">Luồng sự kiện có sẵn</div>
+                                <div><select class="w-300px ml-3 mt-2" style="height: 30px;" type=""></select></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="d-flex pr-5 pl-5 justify-content-start flex-wrap">
+                    <div class="item justify-content-start" style="padding: 5px 0px;">
+                        <div><label for="">Tải tài liệu</label></div>
+                        <div><input type="file" id="img" name="img" class="w-300px" accept="image/*"></div>
+                    </div>
+                    <div class="item justify-content-start" style="padding: 5px 0px;">
+                        <div><label for="">Tải ảnh</label></div>
+                        <div><input type="file" id="img" name="img" class="w-300px" accept="image/*"></div>
+                    </div>
+                    <div class="item d-flex justify-content-start">
+                        <div><label for="">Trạng thái</label></div>
+                        <div><select class="w-300px" type=""></select></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-title"><span><i class="far fa-copyright"></i></span> Copyright HVCG Software. All right
+            reserved.</p>
+    </div>
+    </div>
+</body>
+<script src="../eqhome/js/script.js"></script>
+<script src="../eqhome/ckeditor5/src/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+        $("#flip2").click(function () {
+            $("#panel2").slideToggle("slow");
+        });
+    });
+</script>
+
+</html>
