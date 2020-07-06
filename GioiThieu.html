@@ -8,14 +8,14 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-        <link rel="stylesheet" href="../eqhome/css/style.css">
-        <link rel="stylesheet" href="../eqhome/css/ckeditor.css">
+    <link rel="stylesheet" href="../eqhome/css/style.css">
+    <link rel="stylesheet" href="../eqhome/css/ckeditor.css">
     <title>EQHOMES</title>
     <style>
         .ck-editor__editable_inline {
             width: 100%;
         }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -40,15 +40,15 @@
                             href="../eqhome/QLNguoiDung.html">QL NGƯỜI DÙNG</a>
                     </li>
                     <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
-                        <a href="#" id="flip">QL DANH SÁCH<i
-                                class="fas fa-chevron-down"></i></a>
+                        <a href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel">
                         <li><a style="padding-left: 6rem;" href="../eqhome/QLHuongNha.html">Quản lý hướng nhà</a></li>
                         <li><a style="padding-left: 6rem;" href="../eqhome/QLLaiSuat.html">Quản lý lãi suất</a></li>
                         <li><a style="padding-left: 6rem;" href="../eqhome/QLKyGui.html">Quản lý ký gửi</a></li>
                     </ul>
-                    <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
+                    <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a
+                            href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
                     <li><img class="icon" src="../eqhome/images/tinTuc.png" alt=""><a href="">TIN TỨC</a></li>
                     <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a href="">ĐĂNG TIN</a></li>
                     <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
@@ -64,14 +64,15 @@
 
             <div>
                 <ul class="tab-bar d-flex">
-                    <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#"
-                            onclick="quanLyLaiSuat('lS')">Giới thiệu</a></li>
-                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyLaiSuat('tLS')">Tạo mới bản tin</a>
+                    <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#" onclick="gioiThieu('gT')">Giới
+                            thiệu</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="gioiThieu('tGT')">Tạo mới bản
+                            tin</a>
                     </li>
                 </ul>
             </div>
 
-            <div id="lS" class="tab-content">
+            <div id="gT" class="tab-content">
                 <table class="old-style-table">
                     <tr>
                         <th style="text-align: center; width:1%">STT</th>
@@ -91,7 +92,7 @@
                         <td style="text-align: center">20/02/2020</td>
                         <td style="text-align: center">Published</td>
                         <td style="text-align: center"><i class="far fa-edit"></i></td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>       
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
                     </tr>
                     <tr>
                         <td style="text-align: center">2</td>
@@ -101,17 +102,18 @@
                         <td style="text-align: center">20/02/2020</td>
                         <td style="text-align: center">Published</td>
                         <td style="text-align: center"><i class="far fa-edit"></i></td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>       
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
                     </tr>
                     <tr>
                         <td style="text-align: center">3</td>
-                        <td style="text-align: left;"><a href="">Mua nhà xem tuổi vợ hay chồng để hợp phong thuỷ?</a></td>
+                        <td style="text-align: left;"><a href="">Mua nhà xem tuổi vợ hay chồng để hợp phong thuỷ?</a>
+                        </td>
                         <td style="text-align: center">PhucXO</td>
                         <td style="text-align: center">20/02/2020</td>
                         <td style="text-align: center">20/02/2020</td>
                         <td style="text-align: center">Published</td>
                         <td style="text-align: center"><i class="far fa-edit"></i></td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>       
+                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
                     </tr>
                     <tr class="table-footer">
                         <td style="text-align: center;" colspan="8">
@@ -124,34 +126,57 @@
                 </table>
             </div>
 
-            <div id="tLS" class="tab-content"
+            <div id="tGT" class="tab-content"
                 style="display: none; flex-wrap: wrap; flex-direction: column; margin-left: auto; margin-right: auto;">
-                <div class="pr-5 pl-5">
-                    <div class="item justify-content-start" style="padding: 5px 0px;">
-                        <div><label for="">Ngân hàng</label></div>
-                        <div><select class="w-300px" style="height: 30px;" name="" id=""></select></div>
-                    </div>
-                    <div class="item justify-content-start" style="padding: 5px 0px;">
-                        <div><label for="">Kỳ hạn vay</label></div>
-                        <div><input class="w-300px" type="text" id="" name=""></div>
-                        <span class="pl-3"><i>Tháng</i></span>
-                    </div>
-                    <div class="item justify-content-start" style="padding: 5px 0px;">
-                        <div><label for="">Lãi suất</label></div>
-                        <div><input class="w-300px" type="text" id="" name=""></div>
-                        <span class="pl-3"><i>Dấu thập phân là dấu .</i></span>
-                    </div>
-                    
-                    <div class="item justify-content-start" style="padding: 5px 0px;">
-                        <div><label for="">Mệnh giá</label></div>
-                        <div class="d-flex justify-content-around w-300px">
-                            <div><input type="radio" name="currency" checked id=""> VND</div>
-                            <div><input type="radio" name="currency" id=""> USD</div>
+                <div class="pr-5 pl-5 d-flex flex-wrap">
+                    <div class="w-50 pr-3">
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Tiêu đề</label></div>
+                            <div><input class="w-300px" type="text" id="" name=""></div>
+                        </div>
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Chủ đề</label></div>
+                            <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                    <option value="" selected> Giới thiệu</option>
+                                </select></div>
+                        </div>
+                        <div class="item">
+                            <div><label for="">Phần mở đầu</label></div>
+                            <div><textarea class="w-300px" style="height: 120px;" name="" id=""></textarea></div>
+                        </div>
+                        <div class="item d-flex flex-wrap" style="padding: 5px 0px;">
+                            <div style="width:100%"><label for="">Nội dung</label></div>
+                            <div class="w-100"><textarea id="editor" name="editor" rows="10" cols="80" data-sample-short></textarea></div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-start">
-                        <button class="button ml-0">Tạo mới</button>
-                        <button class="button">Huỷ</button>
+                    <div class="w-50 pl-3">
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Hình minh hoạ</label></div>
+                            <div><input type="file" id="img" name="img" class="w-300px" accept="image/*"></div>
+                        </div>
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Ghi chú hình</label></div>
+                            <div><input class="w-300px" type="text" id="" name=""></div>
+                        </div>
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Hình hiển thị</label></div>
+                            <div><select class="w-300px" style="height: 30px;" name="" id="">
+                                    <option value="" selected> Không hiển thị hình</option>
+                                </select></div>
+                        </div>
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Tác giả</label></div>
+                            <div><input class="w-300px" type="text" id="" name=""></div>
+                        </div>
+                        <div class="item justify-content-between" style="padding: 5px 0px;">
+                            <div><label for="">Tin tiêu điểm</label></div>
+                            <div class="w-300px"><input type="checkbox" id="" name="" value=""> Chọn làm tin tiêu điểm
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center w-100">
+                        <button class="button ml-0 w-300px">Lưu bài viết không đăng</button>
+                        <button class="button w-300px">Đăng bài viết</button>
                     </div>
                 </div>
             </div>
@@ -162,7 +187,7 @@
         </div>
     </div>
 </body>
-<script src="../eqhome/script.js"></script>
+<script src="../eqhome/js/script.js"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -173,10 +198,10 @@
     });
 
     ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
 </script>
 
 </html>

@@ -45,6 +45,15 @@ function quanLyChuyenMuc(chuyenMuc) {
     document.getElementById(lS).style.display = "flex";
   }
 
+  function gioiThieu(gT) {
+    var i;
+    var x = document.getElementsByClassName("tab-content");
+    for (i = 0; i < x.length; i++){
+      x[i].style.display = "none";  
+    }
+    document.getElementById(gT).style.display = "flex";
+  }
+
   function showDetail(detail) {
     var i;
     var x = document.getElementsByClassName("sDetail");
@@ -53,4 +62,5 @@ function quanLyChuyenMuc(chuyenMuc) {
     }
     document.getElementById(detail).style.display = "flex";
   }
+
 
