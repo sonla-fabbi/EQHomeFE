@@ -75,123 +75,128 @@
                             onclick="quanLyKyGui(event,'kG')" id="defaultOpen">Danh sách ký gửi</a></li>
                 </ul>
             </div>
-            <div id="kG" class="tab-content">
-                <table class="table-style-2">
-                    <tr>
-                        <th style="text-align: center; width:1%">STT</th>
-                        <th style="text-align: center; width:22%">Họ tên</th>
-                        <th style="text-align: center; width:22%">Số điện thoại</th>
-                        <th style="text-align: center; width:22%">Email</th>
-                        <th style="text-align: center; width:23%">Ngày tạo</th>
-                        <th style="text-align: center; width:1%">Xoá</th>
-                        <th style="text-align: center; width:9%">Xem</th>
-                    </tr>
-                    <tr style="height: 10px;">
-                        <td style="text-align: center">1</td>
-                        <td id="name" style="text-align: center">Nguyễn Xuân Phúc</td>
-                        <td id="tel" style="text-align: center">0999999999</td>
-                        <td id="mail" style="text-align: center">phucxo@gmail.com</td>
-                        <td id="date" style="text-align: center">03/07/2020 10:55:10:AM</td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
-                        <td style="text-align: center"><a class="xemChiTiet" href="#" onclick="showDetail('detail')">Chi
-                                tiết</a></td>
-                    </tr>
-                    <tr style="height: 10px;">
-                        <td style="text-align: center">2</td>
-                        <td style="text-align: center">Nguyễn Xuân Phúc</td>
-                        <td style="text-align: center">0999999999</td>
-                        <td style="text-align: center">phucxo@gmail.com</td>
-                        <td style="text-align: center">03/07/2020 10:55:10:AM</td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
-                        <td style="text-align: center"><a class="xemChiTiet" href="#" onclick="showDetail('detail')">Chi
-                                tiết</a></td>
-                    </tr>
-                    <tr style="height: 10px;">
-                        <td style="text-align: center">3</td>
-                        <td style="text-align: center">Nguyễn Xuân Phúc</td>
-                        <td style="text-align: center">0999999999</td>
-                        <td style="text-align: center">phucxo@gmail.com</td>
-                        <td style="text-align: center">03/07/2020 10:55:10:AM</td>
-                        <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
-                        <td style="text-align: center"><a class="xemChiTiet" href="#" onclick="showDetail('detail')">Chi
-                                tiết</a></td>
-                    </tr>
-                    <tr class="table-footer">
-                        <td style="text-align: center;" colspan="8">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <i class="fas fa-angle-double-right"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <div class="tab-bar-content" style="position: relative; overflow-y: auto; overflow-x: hidden;">
+                <div id="kG" class="tab-content">
+                    <table class="table-style-2">
+                        <tr>
+                            <th style="text-align: center; width:1%">STT</th>
+                            <th style="text-align: center; width:22%">Họ tên</th>
+                            <th style="text-align: center; width:22%">Số điện thoại</th>
+                            <th style="text-align: center; width:22%">Email</th>
+                            <th style="text-align: center; width:23%">Ngày tạo</th>
+                            <th style="text-align: center; width:1%">Xoá</th>
+                            <th style="text-align: center; width:9%">Xem</th>
+                        </tr>
+                        <tr style="height: 10px;">
+                            <td style="text-align: center">1</td>
+                            <td id="name" style="text-align: center">Nguyễn Xuân Phúc</td>
+                            <td id="tel" style="text-align: center">0999999999</td>
+                            <td id="mail" style="text-align: center">phucxo@gmail.com</td>
+                            <td id="date" style="text-align: center">03/07/2020 10:55:10:AM</td>
+                            <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                            <td style="text-align: center"><a class="xemChiTiet" href="#"
+                                    onclick="showDetail('detail')">Chi
+                                    tiết</a></td>
+                        </tr>
+                        <tr style="height: 10px;">
+                            <td style="text-align: center">2</td>
+                            <td style="text-align: center">Nguyễn Xuân Phúc</td>
+                            <td style="text-align: center">0999999999</td>
+                            <td style="text-align: center">phucxo@gmail.com</td>
+                            <td style="text-align: center">03/07/2020 10:55:10:AM</td>
+                            <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                            <td style="text-align: center"><a class="xemChiTiet" href="#"
+                                    onclick="showDetail('detail')">Chi
+                                    tiết</a></td>
+                        </tr>
+                        <tr style="height: 10px;">
+                            <td style="text-align: center">3</td>
+                            <td style="text-align: center">Nguyễn Xuân Phúc</td>
+                            <td style="text-align: center">0999999999</td>
+                            <td style="text-align: center">phucxo@gmail.com</td>
+                            <td style="text-align: center">03/07/2020 10:55:10:AM</td>
+                            <td style="text-align: center"><i class="far fa-trash-alt"></i></td>
+                            <td style="text-align: center"><a class="xemChiTiet" href="#"
+                                    onclick="showDetail('detail')">Chi
+                                    tiết</a></td>
+                        </tr>
+                        <tr class="table-footer">
+                            <td style="text-align: center;" colspan="8">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <i class="fas fa-angle-double-right"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div id="detail" class="sDetail" style="display: none; flex-wrap: wrap; padding-top: 20px;">
-                <div class="w-50 d-flex flex-column pr-5 pl-5">
-                    <div class="w-100">
-                        <div class="item justify-content-start" style="padding: 5px 0px;">
-                            <div><label for="">Họ tên:</label></div>
-                            <div class="w-300px">
-                                <script>
-                                    var a = document.getElementById('name');
-                                    document.write(a.innerHTML);
-                                </script>
+                <div id="detail" class="sDetail" style="display: none; flex-wrap: wrap; padding-top: 20px;">
+                    <div class="w-50 d-flex flex-column pr-5 pl-5">
+                        <div class="w-100">
+                            <div class="item justify-content-start" style="padding: 5px 0px;">
+                                <div><label for="">Họ tên:</label></div>
+                                <div class="w-300px">
+                                    <script>
+                                        var a = document.getElementById('name');
+                                        document.write(a.innerHTML);
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <div class="item justify-content-start" style="padding: 5px 0px;">
+                                <div><label for="">Số điện thoại:</label></div>
+                                <div class="w-300px">
+                                    <script>
+                                        var b = document.getElementById('tel');
+                                        document.write(b.innerHTML);
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <div class="item justify-content-start" style="padding: 5px 0px;">
+                                <div><label for="">Email:</label></div>
+                                <div class="w-300px">
+                                    <script>
+                                        var c = document.getElementById('mail');
+                                        document.write(c.innerHTML);
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <div class="item justify-content-start" style="padding: 5px 0px;">
+                                <div><label for="">Ngày tạo:</label></div>
+                                <div class="w-300px">
+                                    <script>
+                                        var d = document.getElementById('date');
+                                        document.write(d.innerHTML);
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <div class="item justify-content-start" style="padding: 5px 0px;">
+                                <div><label for="">Nội dung:</label></div>
+                                <div class="w-300px">
+                                    <p></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-100">
+                    <div class="w-50">
                         <div class="item justify-content-start" style="padding: 5px 0px;">
-                            <div><label for="">Số điện thoại:</label></div>
-                            <div class="w-300px">
-                                <script>
-                                    var b = document.getElementById('tel');
-                                    document.write(b.innerHTML);
-                                </script>
-                            </div>
+                            <div><label for="">Hình ảnh:</label></div>
+                            <img class="imgDetail" src="../eqhome/images/imgDetail.jpg" alt="">
                         </div>
                     </div>
-                    <div class="w-100">
-                        <div class="item justify-content-start" style="padding: 5px 0px;">
-                            <div><label for="">Email:</label></div>
-                            <div class="w-300px">
-                                <script>
-                                    var c = document.getElementById('mail');
-                                    document.write(c.innerHTML);
-                                </script>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100">
-                        <div class="item justify-content-start" style="padding: 5px 0px;">
-                            <div><label for="">Ngày tạo:</label></div>
-                            <div class="w-300px">
-                                <script>
-                                    var d = document.getElementById('date');
-                                    document.write(d.innerHTML);
-                                </script>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100">
-                        <div class="item justify-content-start" style="padding: 5px 0px;">
-                            <div><label for="">Nội dung:</label></div>
-                            <div class="w-300px">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-50">
-                    <div class="item justify-content-start" style="padding: 5px 0px;">
-                        <div><label for="">Hình ảnh:</label></div>
-                        <img class="imgDetail" src="../eqhome/images/imgDetail.jpg" alt="">
-                    </div>
-                </div>
-                <!-- <div class="w-100 d-flex justify-content-center">
+                    <!-- <div class="w-100 d-flex justify-content-center">
                     <button class="button ml-0">Tạo mới</button>
                     <button class="button">Huỷ</button>
                 </div> -->
+                </div>
             </div>
         </div>
         <div class="footer">

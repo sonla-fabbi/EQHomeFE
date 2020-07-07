@@ -74,8 +74,8 @@
 
             <div>
                 <ul class="tab-bar d-flex">
-                    <li class="tab-bar-li"><a class="tab-bar-link" href="#"
-                            onclick="quanLyBDS(event,'qLBDS')" id="defaultOpen">Quản lý bất động sản</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyBDS(event,'qLBDS')"
+                            id="defaultOpen">Quản lý bất động sản</a></li>
                     <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyBDS(event,'tHH')">Tin hết
                             hạn</a>
                     </li>
@@ -84,168 +84,169 @@
                     </li>
                 </ul>
             </div>
+            <div class="tab-bar-content" style="position: relative; overflow-y: auto;">
+                <div id="qLBDS" class="tab-content">
+                    <table class="old-style-table">
+                        <tr>
+                            <th style="width:1%">STT</th>
+                            <th style="width:50%">Tiêu đề</th>
+                            <th style="width:12%">Người đăng</th>
+                            <th style="width:10%">Ngày đăng</th>
+                            <th style="width:10%">Loại tin</th>
+                            <th style="width:10%">Trạng thái</th>
+                            <th style="width:1%">Sửa</th>
+                            <th style="width:1%">Xoá</th>
+                        </tr>
+                        <tr>
+                            <td class="stt">1</td>
+                            <td><a href="#">Đại gia Phúc XO bán biệt thự 20 tỷ ở Bạch Mai</a></td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="stt">2</td>
+                            <td><a href="#">Đại gia Phúc XO tiếp tục mua thêm 1 căn penhouse 2 triệu USD ở Hoàn Kiếm</a>
+                            </td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="stt">3</td>
+                            <td><a href="#">Đại gia Phúc XO được đền bù giải phóng mặt bằng 3.8 triệu USD</a></td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr class="table-footer">
+                            <td style="text-align: center;" colspan="8">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <i class="fas fa-angle-double-right"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div id="qLBDS" class="tab-content">
-                <table class="old-style-table">
-                    <tr>
-                        <th style="width:1%">STT</th>
-                        <th style="width:50%">Tiêu đề</th>
-                        <th style="width:12%">Người đăng</th>
-                        <th style="width:10%">Ngày đăng</th>
-                        <th style="width:10%">Loại tin</th>
-                        <th style="width:10%">Trạng thái</th>
-                        <th style="width:1%">Sửa</th>
-                        <th style="width:1%">Xoá</th>
-                    </tr>
-                    <tr>
-                        <td class="stt">1</td>
-                        <td><a href="#">Đại gia Phúc XO bán biệt thự 20 tỷ ở Bạch Mai</a></td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="stt">2</td>
-                        <td><a href="#">Đại gia Phúc XO tiếp tục mua thêm 1 căn penhouse 2 triệu USD ở Hoàn Kiếm</a>
-                        </td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="stt">3</td>
-                        <td><a href="#">Đại gia Phúc XO được đền bù giải phóng mặt bằng 3.8 triệu USD</a></td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr class="table-footer">
-                        <td style="text-align: center;" colspan="8">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <i class="fas fa-angle-double-right"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                <div id="tHH" class="tab-content" style="display: none; margin-left: auto; margin-right: auto;">
+                    <table class="old-style-table">
+                        <tr>
+                            <th style="width:1%">STT</th>
+                            <th style="width:50%">Tiêu đề</th>
+                            <th style="width:12%">Người đăng</th>
+                            <th style="width:10%">Ngày đăng</th>
+                            <th style="width:10%">Loại tin</th>
+                            <th style="width:10%">Trạng thái</th>
+                            <th style="width:1%">Sửa</th>
+                            <th style="width:1%">Xoá</th>
+                        </tr>
+                        <tr>
+                            <td class="stt">1</td>
+                            <td><a href="#">Đại gia Phúc XO tiếp tục mua thêm 1 căn penhouse 2 triệu USD ở Hoàn Kiếm</a>
+                            </td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="stt">2</td>
+                            <td><a href="#">Đại gia Phúc XO bán biệt thự 20 tỷ ở Bạch Mai</a></td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="stt">3</td>
+                            <td><a href="#">Đại gia Phúc XO được đền bù giải phóng mặt bằng 3.8 triệu USD</a></td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr class="table-footer">
+                            <td style="text-align: center;" colspan="8">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <i class="fas fa-angle-double-right"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div id="tHH" class="tab-content" style="display: none; margin-left: auto; margin-right: auto;">
-                <table class="old-style-table">
-                    <tr>
-                        <th style="width:1%">STT</th>
-                        <th style="width:50%">Tiêu đề</th>
-                        <th style="width:12%">Người đăng</th>
-                        <th style="width:10%">Ngày đăng</th>
-                        <th style="width:10%">Loại tin</th>
-                        <th style="width:10%">Trạng thái</th>
-                        <th style="width:1%">Sửa</th>
-                        <th style="width:1%">Xoá</th>
-                    </tr>
-                    <tr>
-                        <td class="stt">1</td>
-                        <td><a href="#">Đại gia Phúc XO tiếp tục mua thêm 1 căn penhouse 2 triệu USD ở Hoàn Kiếm</a>
-                        </td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="stt">2</td>
-                        <td><a href="#">Đại gia Phúc XO bán biệt thự 20 tỷ ở Bạch Mai</a></td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="stt">3</td>
-                        <td><a href="#">Đại gia Phúc XO được đền bù giải phóng mặt bằng 3.8 triệu USD</a></td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr class="table-footer">
-                        <td style="text-align: center;" colspan="8">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <i class="fas fa-angle-double-right"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id="tCD" class="tab-content" style="display: none; margin-left: auto; margin-right: auto;">
-                <table class="old-style-table">
-                    <tr>
-                        <th style="width:1%">STT</th>
-                        <th style="width:50%">Tiêu đề</th>
-                        <th style="width:12%">Người đăng</th>
-                        <th style="width:10%">Ngày đăng</th>
-                        <th style="width:10%">Loại tin</th>
-                        <th style="width:10%">Trạng thái</th>
-                        <th style="width:1%">Sửa</th>
-                        <th style="width:1%">Xoá</th>
-                    </tr>
-                    <tr>
-                        <td class="stt">1</td>
-                        <td><a href="#">Đại gia Phúc XO được đền bù giải phóng mặt bằng 3.8 triệu USD</a>
-                        </td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="stt">2</td>
-                        <td><a href="#">Đại gia Phúc XO bán biệt thự 20 tỷ ở Bạch Mai</a></td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="stt">3</td>
-                        <td><a href="#">Đại gia Phúc XO tiếp tục mua thêm 1 căn penhouse 2 triệu USD ở Hoàn Kiếm</a>
-                        </td>
-                        <td>Admin</td>
-                        <td>02/07/2020</td>
-                        <td class="tinHot">Tin hot</td>
-                        <td>Published</td>
-                        <td><i class="far fa-edit"></i></td>
-                        <td><i class="far fa-trash-alt"></i></td>
-                    </tr>
-                    <tr class="table-footer">
-                        <td style="text-align: center;" colspan="8">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <i class="fas fa-angle-double-right"></i>
-                        </td>
-                    </tr>
-                </table>
+                <div id="tCD" class="tab-content" style="display: none; margin-left: auto; margin-right: auto;">
+                    <table class="old-style-table">
+                        <tr>
+                            <th style="width:1%">STT</th>
+                            <th style="width:50%">Tiêu đề</th>
+                            <th style="width:12%">Người đăng</th>
+                            <th style="width:10%">Ngày đăng</th>
+                            <th style="width:10%">Loại tin</th>
+                            <th style="width:10%">Trạng thái</th>
+                            <th style="width:1%">Sửa</th>
+                            <th style="width:1%">Xoá</th>
+                        </tr>
+                        <tr>
+                            <td class="stt">1</td>
+                            <td><a href="#">Đại gia Phúc XO được đền bù giải phóng mặt bằng 3.8 triệu USD</a>
+                            </td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="stt">2</td>
+                            <td><a href="#">Đại gia Phúc XO bán biệt thự 20 tỷ ở Bạch Mai</a></td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="stt">3</td>
+                            <td><a href="#">Đại gia Phúc XO tiếp tục mua thêm 1 căn penhouse 2 triệu USD ở Hoàn Kiếm</a>
+                            </td>
+                            <td>Admin</td>
+                            <td>02/07/2020</td>
+                            <td class="tinHot">Tin hot</td>
+                            <td>Published</td>
+                            <td><i class="far fa-edit"></i></td>
+                            <td><i class="far fa-trash-alt"></i></td>
+                        </tr>
+                        <tr class="table-footer">
+                            <td style="text-align: center;" colspan="8">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <i class="fas fa-angle-double-right"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="footer">
