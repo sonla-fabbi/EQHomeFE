@@ -70,14 +70,14 @@
             <div>
                 <ul class="tab-bar d-flex">
                     <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#"
-                            onclick="quanLyHuongNha('qLPT')">Quản lý phong thuỷ</a></li>
-                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyHuongNha('tPT')">Tạo phong
+                            onclick="quanLyHuongNha(event,'qLPT')" id="defaultOpen">Quản lý phong thuỷ</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="quanLyHuongNha(event,'tPT')">Tạo phong
                             thuỷ mới</a>
                     </li>
                 </ul>
             </div>
 
-            <div id="qLPT" class="tab-content">
+            <div id="qLPT" class="tab-content selected">
                 <table>
                     <tr>
                         <th style="text-align: center; width:5%">STT</th>
@@ -141,8 +141,8 @@
                         <div><select class="w-300px" style="height: 30px;" name="" id=""></select></div>
                     </div>
                     <div class="item d-flex flex-wrap" style="padding: 5px 0px;">
-                        <div style="width:100%"><label for="">Nội dung</label></div>
-                        <div class="w-50">
+                        <div class="w-100"><label for="">Nội dung</label></div>
+                        <div class="w-100">
                             <form action="" method="post">
                                 <textarea id="editor1" name="editor1" cols="80" rows="10">
                                 </textarea>

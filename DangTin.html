@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" style="overflow-y: hidden;">
         <div class="side-bar w-21 p-0">
             <div id="logo" class="d-flex justify-content-center">
                 <img src="../eqhome/images/logo.png" alt="logo">
@@ -35,7 +35,7 @@
                             href="../eqhome/QLNguoiDung.html">QL NGƯỜI DÙNG</a>
                     </li>
                     <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
-                        <a href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
+                        <a class="w-180px d-flex justify-content-between" href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel">
                         <li><a href="../eqhome/QLHuongNha.html">Quản lý hướng nhà</a></li>
@@ -45,7 +45,7 @@
                     <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a
                             href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
                     <li><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
-                        <a href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
+                        <a class="w-180px d-flex justify-content-between" href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel2">
                         <li><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
@@ -66,7 +66,7 @@
             <div class="header d-flex justify-content-between">
                 <span class="header-title align-baseline">Đăng tin</span>
             </div>
-            <div style="z-index: -1;">
+            <div class="content" style="position: relative; overflow-y: auto;">
                 <div>
                     <div class=" pl-5 pr-5">
                         <p class="title pt-3">THÔNG TIN CƠ BẢN</p>

@@ -30,6 +30,10 @@
 /* end header */
 
 /* body */
+.content{
+    height: calc(100vh - 130px);
+}
+
 .user-row{
     padding: 20px;
     display: flex;
@@ -129,8 +133,8 @@
 }
 
 .imgDetail{
-    max-width: 25rem;
-    max-height: 25rem;
+    max-width: 19rem;
+    max-height: 19rem;
 }
 
 label{
@@ -144,6 +148,10 @@ label{
 
 .w-90px{
     width: 90px;
+}
+
+.w-180px{
+    width: 180px;
 }
 
 .w-200px{
@@ -182,7 +190,7 @@ label{
 /* side bar */
 .side-bar{
     border: 1px solid #d7d7d7;
-    height: calc(100% - 65px);
+    height: calc(100vh - 65px);
     overflow-y: auto;
 }
 
@@ -218,7 +226,7 @@ li:hover{
 
 .fa-chevron-down{
     color: #69797d;
-    padding-left: 65px;
+    padding-left: 0px;
 }
 
 #panel, #panel2{
@@ -241,9 +249,9 @@ li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
-    z-index: 1;
+    /* z-index: -1; */
     /* left: 0;
     bottom: 0; */
 }
@@ -356,13 +364,32 @@ td{
         width: 50px;
         height: 25px;
     }
-
-    .fa-chevron-down{
-        color: #69797d;
-        padding-left: 60px;
-    }
     
     .right-col{
         padding-left: 30px;
+    }
+}
+
+@media(max-width:1280px){
+    #panel a{
+        padding-left: 3rem;
+    }
+    
+    #panel2 a{
+        padding-left: 3rem;
+    }
+
+    .icon{
+        padding: 0px 10px 0px 10px;
+        width: 50px;
+        height: 25px;
+    }
+    
+    .right-col{
+        padding-left: 20px;
+    }
+
+    .w-300px{
+        width: 250px;
     }
 }
