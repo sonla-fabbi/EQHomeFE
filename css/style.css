@@ -4,20 +4,20 @@
     margin: 0;
     box-sizing: border-box;
     font-family: myriad-pro, sans-serif;
-    
-
-
 }
 
 /* header */
 .header{
-    width: calc(100% - 21%);
+    /* width: calc(100% - 21%); */
+    /* width: 100%; */
     height: 65px;
     background-color: #1caace;
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    z-index: 1;
+    /* position: absolute; */
+
+    top: 0;
 }
 
 .header-title{
@@ -137,6 +137,11 @@ label{
     width: 161px;
 }
 
+.title{
+    font-weight: 600;
+    color: #0d3d6e;
+}
+
 .w-90px{
     width: 90px;
 }
@@ -236,8 +241,9 @@ li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
+    z-index: 1;
     /* left: 0;
     bottom: 0; */
 }
