@@ -35,7 +35,8 @@
                             href="../eqhome/QLNguoiDung.html">QL NGƯỜI DÙNG</a>
                     </li>
                     <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
-                        <a class="w-180px d-flex justify-content-between" href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
+                        <a class="w-200px d-flex justify-content-between" href="#" id="flip">QL DANH SÁCH<i
+                                class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel">
                         <li><a href="../eqhome/QLHuongNha.html">Quản lý hướng nhà</a></li>
@@ -45,7 +46,8 @@
                     <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a
                             href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
                     <li><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
-                        <a class="w-180px d-flex justify-content-between" href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
+                        <a class="w-200px d-flex justify-content-between" href="#" id="flip2">TIN TỨC<i
+                                class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel2">
                         <li><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
@@ -54,7 +56,7 @@
                         <li><a href="#">Kiến trúc</a></li>
                         <li><a href="#">Tài chính</a></li>
                     </ul>
-                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a
+                    <li class="side-bar-li active"><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a
                             href="../eqhome/DangTin.html">ĐĂNG TIN</a></li>
                     <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
                     <li><img class="icon" src="../eqhome/images/dangXuat.png" alt=""><a href="">ĐĂNG XUẤT</a></li>
@@ -213,9 +215,9 @@
                     </div>
                     <div class="item d-flex justify-content-start">
                         <div><label for="">Trạng thái</label></div>
-                        <div><select class="w-300px" type="" > 
-                            <option value="" selected> Xuất bản</option>
-                        </select></div>
+                        <div><select class="w-300px" type="">
+                                <option value="" selected> Xuất bản</option>
+                            </select></div>
                     </div>
                 </div>
             </div>
@@ -226,7 +228,7 @@
         </div>
     </div>
 
-</div>
+    </div>
 </body>
 <script src="../eqhome/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -237,6 +239,10 @@
         });
         $("#flip2").click(function () {
             $("#panel2").slideToggle("slow");
+        });
+        $("li a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
         });
     });
 </script>

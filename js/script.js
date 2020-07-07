@@ -122,3 +122,6 @@ function quanLyChuyenMuc(evt, chuyenMuc) {
   
   document.getElementById("defaultOpen").click();
 
+  //side bar
+  
+

@@ -218,6 +218,10 @@ li:hover{
     background-color: #c7f4ff;
 }
 
+.side-bar-li.active{
+    background-color: #c7f4ff;
+}
+
 .icon{
     padding: 0px 20px 0px 50px;
     width: 95px;

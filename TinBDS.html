@@ -35,7 +35,8 @@
                             href="../eqhome/QLNguoiDung.html">QL NGƯỜI DÙNG</a>
                     </li>
                     <li><img class="icon" src="../eqhome/images/quanLyDanhSach.png" alt="">
-                        <a href="#" id="flip">QL DANH SÁCH<i class="fas fa-chevron-down"></i></a>
+                        <a class="w-200px d-flex justify-content-between" href="#" id="flip">QL DANH SÁCH<i
+                                class="fas fa-chevron-down"></i></a>
                     </li>
                     <ul id="panel">
                         <li><a href="../eqhome/QLHuongNha.html">Quản lý hướng nhà</a></li>
@@ -44,17 +45,19 @@
                     </ul>
                     <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a
                             href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
-                            <li><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
-                                <a href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
-                            </li>
-                            <ul id="panel2">
-                                <li><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
-                                <li><a href="#">Phong thuỷ</a></li>
-                                <li><a href="#">Luật bất động sản</a></li>
-                                <li><a href="#">Kiến trúc</a></li>
-                                <li><a href="#">Tài chính</a></li>
-                            </ul>
-                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a href="../eqhome/DangTin.html">ĐĂNG TIN</a></li>
+                    <li class="side-bar-li active"><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
+                        <a class="w-200px d-flex justify-content-between" href="#" id="flip2">TIN TỨC<i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <ul id="panel2">
+                        <li class="side-bar-li active"><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
+                        <li><a href="#">Phong thuỷ</a></li>
+                        <li><a href="#">Luật bất động sản</a></li>
+                        <li><a href="#">Kiến trúc</a></li>
+                        <li><a href="#">Tài chính</a></li>
+                    </ul>
+                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a
+                            href="../eqhome/DangTin.html">ĐĂNG TIN</a></li>
                     <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
                     <li><img class="icon" src="../eqhome/images/dangXuat.png" alt=""><a href="">ĐĂNG XUẤT</a></li>
                 </ul>
@@ -68,7 +71,8 @@
 
             <div>
                 <ul class="tab-bar d-flex">
-                    <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#" onclick="tinBDS(event,'tT')" id="defaultOpen">Tin bất động sản</a></li>
+                    <li class="tab-bar-li"><a class="tab-bar-link link-default" href="#" onclick="tinBDS(event,'tT')"
+                            id="defaultOpen">Tin bất động sản</a></li>
                     <li class="tab-bar-li"><a class="tab-bar-link" href="#" onclick="tinBDS(event,'tBDS')">Tạo mới bản
                             tin</a>
                     </li>
@@ -209,6 +213,10 @@
         });
         $("#flip2").click(function () {
             $("#panel2").slideToggle("slow");
+        });
+        $("li a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
         });
     });
 </script>
