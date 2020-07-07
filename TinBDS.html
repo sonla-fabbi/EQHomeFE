@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="../eqhome/css/style.css">
-    <link rel="stylesheet" href="../eqhome/css/ckeditor.css">
+    <script src="../eqhome/ckeditor_4.14.1_standard_easyimage/ckeditor/ckeditor.js"></script>
     <title>EQHOMES</title>
 </head>
 
@@ -174,9 +174,18 @@
                         </div>
                     </div>
                     <div class="item d-flex flex-wrap w-100" style="padding: 5px 0px;">
-                        <div style="width:100%"><label for="">Nội dung</label></div>
-                        <div class="w-100"><textarea id="editor1" rows="" cols=""
-                                data-sample-short><pre></pre></textarea></div>
+                        <div class="w-100"><label for="">Nội dung</label></div>
+                        <div class="w-100">
+                            <form action="" method="post">
+                                <textarea id="editor1" name="editor1" cols="80" rows="10">
+                            </textarea>
+                                <script>
+
+                                    CKEDITOR.replace('editor1');
+
+                                </script>
+                            </form>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-center w-100">
                         <button class="button ml-0 w-250px">Lưu bài viết không đăng</button>
@@ -192,8 +201,6 @@
     </div>
 </body>
 <script src="../eqhome/js/script.js"></script>
-<script src="../eqhome/ckeditor5/src/ckeditor.js"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {

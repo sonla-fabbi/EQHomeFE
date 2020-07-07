@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="../eqhome/css/style.css">
-    <link rel="stylesheet" href="../eqhome/css/ckeditor.css">
+    <script src="../eqhome/ckeditor_4.14.1_standard_easyimage/ckeditor/ckeditor.js"></script>
     <title>EQHOMES</title>
 </head>
 
@@ -44,17 +44,18 @@
                     </ul>
                     <li><img class="icon" src="../eqhome/images/gioiThieu.png" alt=""><a
                             href="../eqhome/GioiThieu.html">GIỚI THIỆU</a></li>
-                            <li><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
-                                <a href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
-                            </li>
-                            <ul id="panel2">
-                                <li><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
-                                <li><a href="#">Phong thuỷ</a></li>
-                                <li><a href="#">Luật bất động sản</a></li>
-                                <li><a href="#">Kiến trúc</a></li>
-                                <li><a href="#">Tài chính</a></li>
-                            </ul>
-                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a href="../eqhome/DangTin.html">ĐĂNG TIN</a></li>
+                    <li><img class="icon" src="../eqhome/images/tinTuc.png" alt="">
+                        <a href="#" id="flip2">TIN TỨC<i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <ul id="panel2">
+                        <li><a href="../eqhome/TinBDS.html">Tin bất động sản</a></li>
+                        <li><a href="#">Phong thuỷ</a></li>
+                        <li><a href="#">Luật bất động sản</a></li>
+                        <li><a href="#">Kiến trúc</a></li>
+                        <li><a href="#">Tài chính</a></li>
+                    </ul>
+                    <li><img class="icon" src="../eqhome/images/dangTin.png" alt=""><a
+                            href="../eqhome/DangTin.html">ĐĂNG TIN</a></li>
                     <li><img class="icon" src="../eqhome/images/doiMatKhau.png" alt=""><a href="">ĐỔI MẬT KHẨU</a></li>
                     <li><img class="icon" src="../eqhome/images/dangXuat.png" alt=""><a href="">ĐĂNG XUẤT</a></li>
                 </ul>
@@ -141,7 +142,16 @@
                     </div>
                     <div class="item d-flex flex-wrap" style="padding: 5px 0px;">
                         <div style="width:100%"><label for="">Nội dung</label></div>
-                        <div class="w-50"><textarea id="editor" name="editor" data-sample-short><pre></pre></textarea>
+                        <div class="w-50">
+                            <form action="" method="post">
+                                <textarea id="editor1" name="editor1" cols="80" rows="10">
+                                </textarea>
+                                <script>
+
+                                    CKEDITOR.replace('editor1');
+
+                                </script>
+                            </form>
                         </div>
                     </div>
                     <div class="d-flex justify-content-start">
